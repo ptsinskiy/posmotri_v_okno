@@ -59,22 +59,22 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
+  inline-size: 711px;
   block-size: 386px;  
   margin-block-end: 16px;
 }
 
 .result__video {
-  height: 100%;
-  width: 100%;
+  block-size: 100%;
+  inline-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list {
   position: relative;
-  width: 416px;
-  height: 298px;
-  overflow: auto; 
+  block-size: 298px;
+  overflow: auto;
 }
 
 .content__list-item {
@@ -102,7 +102,7 @@ ol {
 
 .content__video-card-thumbnail {
   block-size: 103px;
-  min-width: 194px;
+  min-width: 189px;
   object-fit: cover;
   object-position: center;
 }
@@ -117,6 +117,9 @@ ol {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description-container {
